@@ -1,0 +1,41 @@
+{
+  "name": "ai-chat-vue-demo",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Nuxt 4 + Element Plus 流式 AI 对话最小可跑模板（前后端一体，Nitro 服务端路由）",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/ server/"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.60",
+    "@ai-sdk/vue": "^4.0.93",
+    "@element-plus/icons-vue": "^2.3.2",
+    "ai": "^7.0.93",
+    "element-plus": "^2.14.5",
+    "shiki": "^3.23.0",
+    "shiki-stream": "^0.1.4",
+    "vue": "^3.5.42",
+    "vue-element-plus-x": "^2.0.3",
+    "x-markdown-vue": "^0.0.203",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^10.10.0",
+    "eslint-plugin-vue": "^10.11.0",
+    "globals": "^17.12.0",
+    "nuxt": "^4.0.0",
+    "prettier": "^3.9.6",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vue-eslint-parser": "^10.4.1"
+  }
+}
