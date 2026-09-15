@@ -16,6 +16,12 @@ export default [
     files: ['server/**/*.js'],
     languageOptions: { globals: globals.node },
   },
+  // 前端（src 目录）运行在浏览器环境：setInterval / navigator / document 等按浏览器全局变量声明
+  {
+    name: 'app/browser-client',
+    files: ['src/**/*.{js,mjs,vue}'],
+    languageOptions: { globals: globals.browser },
+  },
   {
     name: 'app/nitro-auto-imports',
     files: ['server/**/*.js', 'nuxt.config.js'],
